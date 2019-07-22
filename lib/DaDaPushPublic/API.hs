@@ -126,7 +126,7 @@ type DaDaPushPublicAPI
 
 -- | Server or client configuration, specifying the host and port to query or serve on.
 data Config = Config
-  { configUrl :: String  -- ^ scheme://hostname:port/path, e.g. "http://localhost:8080/"
+  { configUrl :: String  -- ^ scheme://hostname:port/path, e.g. "https://www.dadapush.com/"
   } deriving (Eq, Ord, Show, Read)
 
 

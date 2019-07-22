@@ -13,7 +13,7 @@ Otherwise, if you already have a Stack project, you can include this package und
 ```yaml
 packages:
 - location:
-    git: https://github.com/yourGitOrg/yourGitRepo
+    git: https://github.com/dadapush/dadapush-haskell-client
     commit: somecommit
 ```
 
@@ -44,7 +44,7 @@ import           Servant.Client          (ClientEnv, mkClientEnv, parseBaseUrl)
 main :: IO ()
 main = do
   -- Configure the BaseUrl for the client
-  url <- parseBaseUrl "http://localhost:8080/"
+  url <- parseBaseUrl "https://www.dadapush.com/"
 
   -- You probably want to reuse the Manager across calls, for performance reasons
   manager <- newManager tlsManagerSettings
@@ -70,10 +70,10 @@ import DaDaPushPublic.API
 -- A module you wrote yourself, containing all handlers needed for the DaDaPushPublicBackend type.
 import DaDaPushPublic.Handlers
 
--- Run a DaDaPushPublic server on localhost:8080
+-- Run a DaDaPushPublic server on https://www.dadapush.com/
 main :: IO ()
 main = do
   let server = DaDaPushPublicBackend{..}
-      config = Config "http://localhost:8080/"
+      config = Config "https://www.dadapush.com/"
   runDaDaPushPublicServer config server
 ```

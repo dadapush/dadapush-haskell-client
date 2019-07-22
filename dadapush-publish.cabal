@@ -1,11 +1,11 @@
-name:                dadapush-public
+name:                dadapush-publish
 version:             0.1.0.0
-synopsis:            Auto-generated API bindings for dadapush-public
+synopsis:            Auto-generated API bindings for dadapush-publish
 description:         Please see README.md
-homepage:            https://openapi-generator.tech
-author:              Author Name Here
-maintainer:          author.name@email.com
-copyright:           YEAR - AUTHOR
+homepage:            https://www.dadapush.com
+author:              DaDaPush
+maintainer:          contacts@dadapush.com
+copyright:           2019 - DaDaPush
 category:            Web
 build-type:          Simple
 cabal-version:       >=1.10
